@@ -2,10 +2,64 @@
 <html>
     <head>
         <title>Simple Sign Up</title>
-        <link href="style.css" rel="stylesheet">
+        <link href="./style.css" rel="stylesheet">
     </head>
 
     <body>
-        a
+        <img src="./background.png" id="background-img" alt="background image">
+        <div id="right-panel">
+            <img src="./me-logo.png" alt="logo icon">
+            <h1>LUCAS COLLI</h1>
+            <p>Picture by <a>ChatGPT</a></p>
+        </div>
+        <div id="left-panel">
+            <div id="panel-content">
+                <h1>This is not a real online service! You knkow you need something like this in your life to help you realize your deepest dreams.<br> Sign up <em>now</em> to get started!<br></h1>
+                <h1>You <em>know</em> you want to.</h1>
+
+                <h2>Let's do this!</h2>
+                <form>
+
+                    <fieldset>
+                        <div>
+                            <label for="first_name">First Name<p> *</p></label>
+                            <input type="text" placeholder="Lucas" name="first_name" required/>
+                        </div>
+
+                        <div>
+                            <label for="first_name">Last Name<p> *</p></label>
+                            <input type="text" placeholder="Colli" name="last_name" required/>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <div>
+                            <label for="email">Email<p> *</p></label>
+                            <input type="email" name="email" placeholder="email@example.com" required/>
+                        </div>
+                        <div>
+                            <label for="phone">Phone Number</label>
+                            <input type="number" name="phone" placeholder=""/>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <div>
+                            <label for="password">Password<p> *</p></label>
+                            <input type="password" name="password" id="password" placeholder="" required/>
+                        </div>
+
+                        <div>
+                            <label for="password-confirm">Confirm Password<p> *</p></label>
+                            <input type="password" name="password-confirm" id="password-confirm" required/>
+                        </div>
+                    </fieldset>
+
+                    <button>Create Account</button>
+                </form>
+
+                <p>Already have an account? <a>Log In</a></p>
+            </div>
+        </div>
+
+        <script src="./scripts.js"></script>
     </body>
 </html>
